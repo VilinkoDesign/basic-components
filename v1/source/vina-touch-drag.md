@@ -24,7 +24,7 @@
 
 ### 解决什么问题
 
-| 痛点 | 原生 HTML5 DnD | `touch-drag.js` |
+| 痛点 | 原生 HTML5 DnD | `vina-touch-drag.js` |
 |------|---------------|-----------------|
 | 触屏设备能否拖拽 | ❌ 不触发 `dragstart` | ✅ Pointer Events |
 | 鼠标 / 触屏 / 手写笔统一 | ❌ 需要两套逻辑 | ✅ 一套 |
@@ -48,7 +48,7 @@
 ### 传统 `<script>` 标签
 
 ```html
-<script src="touch-drag.js"></script>
+<script src="vina-touch-drag.js"></script>
 ```
 
 脚本会在 `DOMContentLoaded` 后自动初始化，无需手动调用。
@@ -56,7 +56,7 @@
 ### ES Module（可选）
 
 ```js
-import 'touch-drag.js';
+import 'vina-touch-drag.js';
 ```
 
 库会挂载到 `window.TouchDrag`。
@@ -82,7 +82,7 @@ import 'touch-drag.js';
     放到这里
   </div>
 
-  <script src="touch-drag.js"></script>
+  <script src="vina-touch-drag.js"></script>
   <script>
     TouchDrag.config({
       onDrop: function (ctx) {
@@ -184,7 +184,7 @@ handle.destroy();
 </div>
 <div id="canvas" style="width:400px;height:300px;border:1px solid #ccc;"></div>
 
-<script src="touch-drag.js"></script>
+<script src="vina-touch-drag.js"></script>
 <script>
   var canvas = document.getElementById('canvas');
 
