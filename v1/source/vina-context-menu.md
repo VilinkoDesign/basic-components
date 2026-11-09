@@ -1,4 +1,4 @@
-# vina-context-menu
+# vina-context-menu.js
 
 轻量、零依赖的自定义右键菜单库。支持容器限定、主题定制、图标、子菜单、快捷键与完整的客制化渲染钩子。
 
